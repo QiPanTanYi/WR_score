@@ -1,0 +1,692 @@
+{
+   "buttonApply": {
+      "message": "Apply"
+   },
+   "buttonCancel": {
+      "message": "Скасувати"
+   },
+   "buttonCheckForUpdates": {
+      "message": "Перевірити оновлення"
+   },
+   "buttonClose": {
+      "message": "Закрити"
+   },
+   "buttonConfirmInstallation": {
+      "message": "Встановити"
+   },
+   "buttonConfirmReinstallation": {
+      "message": "Confirm re-installation"
+   },
+   "buttonDisable": {
+      "message": "Вимкнути"
+   },
+   "buttonEdit": {
+      "message": "Редагувати"
+   },
+   "buttonEditClickHint": {
+      "message": "You can also Right-click, Ctrl-click, Wheel-click on the script name."
+   },
+   "buttonEmptyRecycleBin": {
+      "message": "Empty recycle bin now!"
+   },
+   "buttonEnable": {
+      "message": "Ввімкнути"
+   },
+   "buttonExportData": {
+      "message": "Експорт в zip-файл"
+   },
+   "buttonHome": {
+      "message": "Домашня сторінка"
+   },
+   "buttonImportData": {
+      "message": "Імпорт з zip-файлу"
+   },
+   "buttonInstallFromURL": {
+      "message": "Встановити за посиланням"
+   },
+   "buttonNew": {
+      "message": "Створити"
+   },
+   "buttonOK": {
+      "message": "OK"
+   },
+   "buttonRecycleBin": {
+      "message": "Recycle Bin"
+   },
+   "buttonRemove": {
+      "message": "Видалити"
+   },
+   "buttonReplace": {
+      "message": "Замінити"
+   },
+   "buttonReplaceAll": {
+      "message": "Замінити всі"
+   },
+   "buttonReset": {
+      "message": "Reset"
+   },
+   "buttonRestore": {
+      "message": "Restore"
+   },
+   "buttonSave": {
+      "message": "Зберегти"
+   },
+   "buttonSaveClose": {
+      "message": "Зберегти й закрити"
+   },
+   "buttonShowEditorState": {
+      "message": "Show editor state"
+   },
+   "buttonSupport": {
+      "message": "Сторінка підтримки"
+   },
+   "buttonUpdate": {
+      "message": "Update"
+   },
+   "buttonUpdateAll": {
+      "message": "Перевірити оновлення скриптів"
+   },
+   "buttonVacuum": {
+      "message": "Очистити кеш"
+   },
+   "buttonVacuumed": {
+      "message": "Кеш очищено"
+   },
+   "buttonVacuuming": {
+      "message": "Очищення даних кешу..."
+   },
+   "confirmNotSaved": {
+      "message": "Зміни не збережено!\nНатисніть OK, щоб вийти або Скасувати, щоб повернутися."
+   },
+   "descBlacklist": {
+      "message": "Скрипти не будуть вводитися в документи, URL яких збігаються з правилами цього списку."
+   },
+   "descCustomCSS": {
+      "message": "Користувацькі стилі CSS для сторінки Налаштування і сторінки  встановлення скриптів. Якщо Ви не знаєте, що це, будь ласка, не редагуйте цей текст."
+   },
+   "descEditorOptions": {
+      "message": "Custom options for CodeMirror and addons in JSON object like \u003Ccode>{\"indentUnit\":2, \"smartIndent\":true}\u003C/code> however note that some of them may not work in Violentmonkey. See \u003Ca href=\"https://codemirror.net/doc/manual.html#config\" target=\"_blank\" rel=\"noopener noreferrer\">full list\u003C/a>."
+   },
+   "editHelpDocumention": {
+      "message": "Documentation on userscript metadata block and \u003Ccode>GM\u003C/code> API:"
+   },
+   "editHelpKeyboard": {
+      "message": "Keyboard shortcuts:"
+   },
+   "editHowToHint": {
+      "message": "Use another editor?"
+   },
+   "editLabelMeta": {
+      "message": "Користувацькі meta-дані"
+   },
+   "editLabelSettings": {
+      "message": "Налаштування скрипта"
+   },
+   "editLongLine": {
+      "message": "Line is too long"
+   },
+   "editLongLineTooltip": {
+      "message": "This line is too long so its text is collapsed to avoid delays when editing.\nYou can adjust the limit in advanced settings, for example:\n\"maxDisplayLength\": 20000"
+   },
+   "editNavCode": {
+      "message": "Код"
+   },
+   "editNavSettings": {
+      "message": "Налаштування"
+   },
+   "editNavValues": {
+      "message": "Values"
+   },
+   "editValueAllHint": {
+      "message": "Show/edit the entire script value storage"
+   },
+   "extDescription": {
+      "message": "Violentmonkey дозволяє користувачеві автоматично вводити скрипти в сторінки, щоб змінювати їх вигляд чи поведінку."
+   },
+   "extName": {
+      "message": "Violentmonkey"
+   },
+   "failureReasonBlacklisted": {
+      "message": "Blacklisted in Violentmonkey's settings"
+   },
+   "failureReasonNoninjectable": {
+      "message": "Violentmonkey cannot run userscripts in this page\n(common examples: browser UI, an extension, blocked via policies, a search engine site in Opera)"
+   },
+   "filterAlphabeticalOrder": {
+      "message": "алфавіту"
+   },
+   "filterExecutionOrder": {
+      "message": "порядку виконання"
+   },
+   "filterLastUpdateOrder": {
+      "message": "last update time"
+   },
+   "filterScopeAll": {
+      "message": "All"
+   },
+   "filterScopeCode": {
+      "message": "Code"
+   },
+   "filterScopeName": {
+      "message": "Name"
+   },
+   "filterSize": {
+      "message": "size"
+   },
+   "genericError": {
+      "message": "Error"
+   },
+   "genericOff": {
+      "message": "off"
+   },
+   "genericOn": {
+      "message": "on"
+   },
+   "genericUseGlobal": {
+      "message": "use global setting"
+   },
+   "headerRecycleBin": {
+      "message": "Recycle Bin"
+   },
+   "hintInputURL": {
+      "message": "Введіть URL:"
+   },
+   "hintRecycleBin": {
+      "message": "Scripts removed are listed here and will be kept for 7 days."
+   },
+   "hintUseDownloadURL": {
+      "message": "Використовувати @downloadURL"
+   },
+   "hintVacuum": {
+      "message": "Очистити зайвий кеш та спробувати довантажити відсутні ресурси."
+   },
+   "installFrom": {
+      "message": "Встановити з $1"
+   },
+   "installOptionClose": {
+      "message": "Закрити після встановлення."
+   },
+   "installOptionTrack": {
+      "message": "Стежити за оновленнями локального файлу, доки відкрите це вікно."
+   },
+   "installOptionTrackTooltip": {
+      "message": "The source file tab should be kept open in Firefox 68 and newer."
+   },
+   "labelAdvanced": {
+      "message": "Advanced"
+   },
+   "labelAllowUpdate": {
+      "message": "Дозволити оновлення"
+   },
+   "labelAuthor": {
+      "message": "Автор: "
+   },
+   "labelAutoReloadCurrentTab": {
+      "message": "Оновити поточну вкладку після ввімкнення/вимкнення скрипта."
+   },
+   "labelAutoReloadCurrentTabDisabled": {
+      "message": "Current scripts will keep running until you reload the tab"
+   },
+   "labelAutoUpdate": {
+      "message": "Check for script updates every $1 day(s), use 0 to disable"
+   },
+   "labelBackup": {
+      "message": "Backup"
+   },
+   "labelBadge": {
+      "message": "Показувати на значку: "
+   },
+   "labelBadgeColors": {
+      "message": "Badge colors: "
+   },
+   "labelBadgeNone": {
+      "message": "нічого"
+   },
+   "labelBadgeTotal": {
+      "message": "загальну кількість запущених скриптів"
+   },
+   "labelBadgeUnique": {
+      "message": "кількість унікальних діючих скриптів"
+   },
+   "labelBlacklist": {
+      "message": "Чорний список"
+   },
+   "labelContributors": {
+      "message": "Contributors"
+   },
+   "labelCurrentLang": {
+      "message": "Поточна мова: "
+   },
+   "labelCustomCSS": {
+      "message": "Користувацькі стилі CSS"
+   },
+   "labelDownloadURL": {
+      "message": "Джерело завантаження:"
+   },
+   "labelEditValue": {
+      "message": "Editing script value"
+   },
+   "labelEditValueAll": {
+      "message": "Editing script storage"
+   },
+   "labelEditor": {
+      "message": "Editor"
+   },
+   "labelEnabledScriptsOnly": {
+      "message": "enabled scripts only"
+   },
+   "labelExclude": {
+      "message": "Не застосовувати на (правила виключень @exclude):"
+   },
+   "labelExcludeMatch": {
+      "message": "Не застосовувати на (правила виключень @exclude-match):"
+   },
+   "labelExportScriptData": {
+      "message": "Налаштування скрипта"
+   },
+   "labelExposeStatus": {
+      "message": "Expose installed version on userscript catalog sites: $1"
+   },
+   "labelFastFirefoxInject": {
+      "message": "Alternative $1 mode in Firefox"
+   },
+   "labelFastFirefoxInjectHint": {
+      "message": "An alternative injection method for \u003Cdocument-start> scripts since Firefox 59, faster than the default mode. Similarly to \"Synchronous page mode\" it also increases memory consumption, so you may want to disable it if your scripts work correctly without this option."
+   },
+   "labelFeedback": {
+      "message": "Зворотній зв'язок"
+   },
+   "labelFilterSort": {
+      "message": "Сортувати по $1"
+   },
+   "labelGeneral": {
+      "message": "Загальні налаштування"
+   },
+   "labelHelpTranslate": {
+      "message": "Help with translation"
+   },
+   "labelHomepage": {
+      "message": "Homepage"
+   },
+   "labelHomepageURL": {
+      "message": "Дом.сторінка:"
+   },
+   "labelImportScriptData": {
+      "message": "Import script data"
+   },
+   "labelImportSettings": {
+      "message": "Імпортувати налаштування."
+   },
+   "labelInclude": {
+      "message": "Застосовувати на (правила включень @include):"
+   },
+   "labelInjectionMode": {
+      "message": "Default injection mode: "
+   },
+   "labelInstall": {
+      "message": "Встановлення скрипта..."
+   },
+   "labelKeepOriginal": {
+      "message": "Використовувати оригінальні правила."
+   },
+   "labelLastUpdatedAt": {
+      "message": "Last updated at $1"
+   },
+   "labelLineNumber": {
+      "message": "Номер рядка:"
+   },
+   "labelMatch": {
+      "message": "Застосовувати на (правила збігів @match):"
+   },
+   "labelName": {
+      "message": "Назва:"
+   },
+   "labelNoFrames": {
+      "message": "Run in frames: "
+   },
+   "labelNoName": {
+      "message": "Новий скрипт"
+   },
+   "labelNoSearchScripts": {
+      "message": "Скрипти не знайдено."
+   },
+   "labelNotifyThisUpdated": {
+      "message": ", then notify:"
+   },
+   "labelNotifyUpdates": {
+      "message": "Повідомляти про оновлення скриптів."
+   },
+   "labelNotifyUpdatesGlobal": {
+      "message": "ignore per-script notification (\"settings\" tab in editor)"
+   },
+   "labelPopupSort": {
+      "message": "Sort scripts in popup by $1"
+   },
+   "labelPrivacyPolicy": {
+      "message": "Privacy Policy"
+   },
+   "labelReinstall": {
+      "message": "Re-installing script"
+   },
+   "labelRelated": {
+      "message": "Посилання: "
+   },
+   "labelRemovedAt": {
+      "message": "Removed at $1"
+   },
+   "labelReplace": {
+      "message": "Замінити на: "
+   },
+   "labelRunAt": {
+      "message": "Виконувати: "
+   },
+   "labelRunAtDefault": {
+      "message": "(за замовчуванням)"
+   },
+   "labelScriptTemplate": {
+      "message": "Custom Script Template"
+   },
+   "labelSearch": {
+      "message": "Знайти: "
+   },
+   "labelSearchScript": {
+      "message": "Пошук скриптів..."
+   },
+   "labelSettings": {
+      "message": "Налаштування"
+   },
+   "labelShowOrder": {
+      "message": "Show execution order positions"
+   },
+   "labelSync": {
+      "message": "Синхронізація з хмарним сховищем"
+   },
+   "labelSyncAnonymous": {
+      "message": "Use anonymous account"
+   },
+   "labelSyncAuthorize": {
+      "message": "Підключити"
+   },
+   "labelSyncAuthorizing": {
+      "message": "Авторизація..."
+   },
+   "labelSyncDisabled": {
+      "message": "нічим"
+   },
+   "labelSyncPassword": {
+      "message": "Password: "
+   },
+   "labelSyncRevoke": {
+      "message": "Відключити"
+   },
+   "labelSyncScriptStatus": {
+      "message": "Синхронізувати статус скриптів."
+   },
+   "labelSyncServerUrl": {
+      "message": "Server URL: "
+   },
+   "labelSyncService": {
+      "message": "Синхронізувати з"
+   },
+   "labelSyncUsername": {
+      "message": "Username: "
+   },
+   "labelTheme": {
+      "message": "Theme: "
+   },
+   "labelUpdateURL": {
+      "message": "Адреса оновлення:"
+   },
+   "labelViewSingleColumn": {
+      "message": "Single column"
+   },
+   "labelViewTable": {
+      "message": "Table view"
+   },
+   "labelXhrInject": {
+      "message": "Synchronous $1 mode"
+   },
+   "labelXhrInjectHint": {
+      "message": "Enable only if you have a script that needs to run before the page starts loading and currently it's running too late. Just like Instant injection mode in Tampermonkey, this option is using the deprecated synchronous XHR, so in Chrome/Chromium you'll see warnings in devtools console, although you can safely ignore them as the adverse affects are negligible in this case. You can hide the warnings for good by right-clicking one."
+   },
+   "lastSync": {
+      "message": "Остання синхронізація в $1."
+   },
+   "learnBlacklist": {
+      "message": "Детальніше про чорні списки."
+   },
+   "learnInjectionMode": {
+      "message": "Learn more about injection modes."
+   },
+   "menuDashboard": {
+      "message": "Панель керування"
+   },
+   "menuExclude": {
+      "message": "Exclude..."
+   },
+   "menuExcludeHint": {
+      "message": "The current tab will auto-reload if you enabled this option in general settings.\nTo apply changes to all other tabs please reload them manually.\nUse \"Settings\" tab of the editor for more flexibility."
+   },
+   "menuFeedback": {
+      "message": "Feedback"
+   },
+   "menuFindScripts": {
+      "message": "Знайти скрипти для сайту"
+   },
+   "menuInjectionFailed": {
+      "message": "Could not inject some scripts."
+   },
+   "menuInjectionFailedFix": {
+      "message": "Retry in \"auto\" mode"
+   },
+   "menuMatchedDisabledScripts": {
+      "message": "Matched disabled scripts"
+   },
+   "menuMatchedFrameScripts": {
+      "message": "Sub-frames only scripts"
+   },
+   "menuMatchedScripts": {
+      "message": "Співпадаючі скрипти"
+   },
+   "menuNewScript": {
+      "message": "Create a new script"
+   },
+   "menuScriptDisabled": {
+      "message": "Скрипти вимкнені"
+   },
+   "menuScriptEnabled": {
+      "message": "Скрипти ввімкнені"
+   },
+   "msgCheckingForUpdate": {
+      "message": "Перевірка наявності оновлень..."
+   },
+   "msgDateFormatInfo": {
+      "message": "Click to open MomentJS documentation. Allowed tokens: $1. Use [square brackets] to protect literal text."
+   },
+   "msgErrorFetchingResource": {
+      "message": "Error fetching resource!"
+   },
+   "msgErrorFetchingScript": {
+      "message": "Помилка завантаження скрипта!"
+   },
+   "msgErrorFetchingUpdateInfo": {
+      "message": "Не вдається перевірити наявність оновлень."
+   },
+   "msgErrorLoadingData": {
+      "message": "Помилка завантаження скрипта."
+   },
+   "msgErrorLoadingDependency": {
+      "message": "Помилка завантаження необхідних компонентів."
+   },
+   "msgImported": {
+      "message": "$1 скрипт(a/ів) імпортовано."
+   },
+   "msgIncognitoChanges": {
+      "message": "Changes you make in the incognito mode also apply to your main profile."
+   },
+   "msgInstalled": {
+      "message": "Скрипт встановлено."
+   },
+   "msgInvalidScript": {
+      "message": "Невірний скрипт."
+   },
+   "msgLoadingData": {
+      "message": "Завантаження скрипта..."
+   },
+   "msgLoadingDependency": {
+      "message": "Завантаження необхідних компонентів... ($1/$2)"
+   },
+   "msgMissingResources": {
+      "message": "Missing required resources."
+   },
+   "msgNamespaceConflict": {
+      "message": "Конфлікт простору імен скриптів. Змініть @name і @namespace."
+   },
+   "msgNamespaceConflictRestore": {
+      "message": "A script with the same @name and @namespace is already installed."
+   },
+   "msgNewVersion": {
+      "message": "Доступна нова версія."
+   },
+   "msgNoUpdate": {
+      "message": "Оновлення не знайдено."
+   },
+   "msgOpenUpdateErrors": {
+      "message": "Error updating scripts. Click to open them."
+   },
+   "msgReinstallScripts": {
+      "message": "Please re-save or reinstall these script(s):"
+   },
+   "msgSameCode": {
+      "message": " (code is the same)"
+   },
+   "msgSavedBlacklist": {
+      "message": "Чорний список збережено."
+   },
+   "msgSavedCustomCSS": {
+      "message": "Користувацькі стилі CSS збережено."
+   },
+   "msgSavedEditorOptions": {
+      "message": "Editor options are updated."
+   },
+   "msgSavedScriptTemplate": {
+      "message": "Custom script template is updated."
+   },
+   "msgScriptUpdated": {
+      "message": "Скрипт [$1] оновлено!"
+   },
+   "msgShowHide": {
+      "message": "Show/hide"
+   },
+   "msgSyncError": {
+      "message": "Помилка синхронізації."
+   },
+   "msgSyncInit": {
+      "message": "Встановлення з'єднання..."
+   },
+   "msgSyncInitError": {
+      "message": "Помилка ініціалізації синхронізації."
+   },
+   "msgSyncNoAuthYet": {
+      "message": "Not authorized yet."
+   },
+   "msgSyncReady": {
+      "message": "Синхронізація скоро почнеться..."
+   },
+   "msgSyncing": {
+      "message": "Синхронізація..."
+   },
+   "msgSyntaxError": {
+      "message": "Syntax error?"
+   },
+   "msgUpdated": {
+      "message": "Скрипт оновлено."
+   },
+   "msgUpdating": {
+      "message": "Оновлення..."
+   },
+   "noValues": {
+      "message": "No value is stored"
+   },
+   "optionEditorWindow": {
+      "message": "Open editor from popup in a new window"
+   },
+   "optionEditorWindowHint": {
+      "message": "Editor window position will be remembered only on resizing or saving"
+   },
+   "optionEditorWindowSimple": {
+      "message": "Hide omnibox"
+   },
+   "optionPopup": {
+      "message": "Popup menu and icon"
+   },
+   "optionPopupEnabledFirst": {
+      "message": "Enabled first"
+   },
+   "optionPopupGroupDisabled": {
+      "message": "Group disabled scripts"
+   },
+   "optionPopupGroupRunAt": {
+      "message": "Group by @run-at stage"
+   },
+   "optionPopupHideDisabled": {
+      "message": "Hide disabled scripts"
+   },
+   "optionPopupShowDisabled": {
+      "message": "Show disabled scripts"
+   },
+   "optionShowEnabledFirst": {
+      "message": "Показувати ввімкнені скрипти першими"
+   },
+   "optionUiTheme": {
+      "message": "UI theme: "
+   },
+   "optionUiThemeAuto": {
+      "message": "automatic"
+   },
+   "optionUiThemeDark": {
+      "message": "dark"
+   },
+   "optionUiThemeLight": {
+      "message": "light"
+   },
+   "optionUpdate": {
+      "message": "Оновлення"
+   },
+   "searchCaseSensitive": {
+      "message": "Case sensitive"
+   },
+   "searchUseRegex": {
+      "message": "Use Regex"
+   },
+   "sideMenuAbout": {
+      "message": "Про розширення"
+   },
+   "sideMenuInstalled": {
+      "message": "Встановлені скрипти"
+   },
+   "sideMenuSettings": {
+      "message": "Налаштування"
+   },
+   "titleBadgeColor": {
+      "message": "Normal badge color"
+   },
+   "titleBadgeColorBlocked": {
+      "message": "Badge color when the site is non-injectable (blacklisted or unsupported)"
+   },
+   "titleSearchHint": {
+      "message": "* \u003CEnter> key adds the text to autocomplete history\n* RegExp syntax is supported: /re/ and /re/flags"
+   },
+   "valueLabelKey": {
+      "message": "Key (string)"
+   },
+   "valueLabelValue": {
+      "message": "Value (serialized as JSON)"
+   },
+   "valueLabelValueAll": {
+      "message": "All values (serialized as JSON)"
+   },
+   "visitWebsite": {
+      "message": "Visit Website"
+   }
+}

@@ -1,0 +1,692 @@
+{
+   "buttonApply": {
+      "message": "Apply"
+   },
+   "buttonCancel": {
+      "message": "Annulla"
+   },
+   "buttonCheckForUpdates": {
+      "message": "Controlla aggiornamenti"
+   },
+   "buttonClose": {
+      "message": "Chiudi"
+   },
+   "buttonConfirmInstallation": {
+      "message": "Conferma installazione"
+   },
+   "buttonConfirmReinstallation": {
+      "message": "Conferma reinstallazione"
+   },
+   "buttonDisable": {
+      "message": "Disabilita"
+   },
+   "buttonEdit": {
+      "message": "Modifica"
+   },
+   "buttonEditClickHint": {
+      "message": "Puoi anche fare clic con il tasto destro, ctrl-clic, clic con la rotella sul nome dello script."
+   },
+   "buttonEmptyRecycleBin": {
+      "message": "Svuota il cestino ora!"
+   },
+   "buttonEnable": {
+      "message": "Abilita"
+   },
+   "buttonExportData": {
+      "message": "Esporta a zip"
+   },
+   "buttonHome": {
+      "message": "Homepage"
+   },
+   "buttonImportData": {
+      "message": "Importa da zip"
+   },
+   "buttonInstallFromURL": {
+      "message": "Installa da URL"
+   },
+   "buttonNew": {
+      "message": "Nuovo"
+   },
+   "buttonOK": {
+      "message": "OK"
+   },
+   "buttonRecycleBin": {
+      "message": "Cestino"
+   },
+   "buttonRemove": {
+      "message": "Rimuovi"
+   },
+   "buttonReplace": {
+      "message": "Sostituisci"
+   },
+   "buttonReplaceAll": {
+      "message": "Tutti"
+   },
+   "buttonReset": {
+      "message": "Reset"
+   },
+   "buttonRestore": {
+      "message": "Ripristina"
+   },
+   "buttonSave": {
+      "message": "Salva"
+   },
+   "buttonSaveClose": {
+      "message": "Salva & Chiudi"
+   },
+   "buttonShowEditorState": {
+      "message": "Mostra lo stato dell'editor"
+   },
+   "buttonSupport": {
+      "message": "Supporto"
+   },
+   "buttonUpdate": {
+      "message": "Update"
+   },
+   "buttonUpdateAll": {
+      "message": "Controlla tutti gli aggiornamenti"
+   },
+   "buttonVacuum": {
+      "message": "Svuota database"
+   },
+   "buttonVacuumed": {
+      "message": "Dati eliminati"
+   },
+   "buttonVacuuming": {
+      "message": "Eliminando dati..."
+   },
+   "confirmNotSaved": {
+      "message": "Modifiche non salvate!\nClicca OK per scartarle o annulla per rimanere."
+   },
+   "descBlacklist": {
+      "message": "Gli URL in questa lista non saranno affetti dagli script."
+   },
+   "descCustomCSS": {
+      "message": "CSS personalizzato per le pagine opzioni e installazione script. Se non sei sicuro di cosa sia, per favore non modificarlo."
+   },
+   "descEditorOptions": {
+      "message": "Opzioni personalizzate per CodeMirror e componenti aggiuntivi in oggetto JSON, come \u003Ccode>{\"indentUnit\":2, \"smartIndent\":true}\u003C/code>, tuttavia, tieni presente che alcuni di essi potrebbero non funzionare in Violentmonkey. Vedi \u003Ca href=\"https://codemirror.net/doc/manual.html#config\" target=\"_blank\" rel=\"noopener noreferrer\">elenco completo\u003C/a>."
+   },
+   "editHelpDocumention": {
+      "message": "Documentation on userscript metadata block and \u003Ccode>GM\u003C/code> API:"
+   },
+   "editHelpKeyboard": {
+      "message": "Keyboard shortcuts:"
+   },
+   "editHowToHint": {
+      "message": "Use another editor?"
+   },
+   "editLabelMeta": {
+      "message": "Metadata personalizzato"
+   },
+   "editLabelSettings": {
+      "message": "Impostazioni script"
+   },
+   "editLongLine": {
+      "message": "La linea è troppo lunga"
+   },
+   "editLongLineTooltip": {
+      "message": "La linea è troppo lunga, per cui il testo è stato ridotto per prevenire ritardi durante l'editing.\nPuoi impostarne il limite nelle impostazioni avanzate, per esempio:\n\"maxDisplayLength\":20000"
+   },
+   "editNavCode": {
+      "message": "Codice"
+   },
+   "editNavSettings": {
+      "message": "Impostazioni"
+   },
+   "editNavValues": {
+      "message": "Valori"
+   },
+   "editValueAllHint": {
+      "message": "Mostra/modifica l'intero archivio dei valori dello script"
+   },
+   "extDescription": {
+      "message": "Un gestore open source di userscript che supporta molti browser"
+   },
+   "extName": {
+      "message": "Violentmonkey"
+   },
+   "failureReasonBlacklisted": {
+      "message": "Blacklisted in Violentmonkey's settings"
+   },
+   "failureReasonNoninjectable": {
+      "message": "Violentmonkey non può eseguire script utente in questa pagina\n(esempi comuni: interfaccia utente del browser, una estensione, bloccato tramite criteri, un sito di motore di ricerca in Opera)"
+   },
+   "filterAlphabeticalOrder": {
+      "message": "ordine alfabetico"
+   },
+   "filterExecutionOrder": {
+      "message": "ordine di esecuzione"
+   },
+   "filterLastUpdateOrder": {
+      "message": "last update time"
+   },
+   "filterScopeAll": {
+      "message": "All"
+   },
+   "filterScopeCode": {
+      "message": "Code"
+   },
+   "filterScopeName": {
+      "message": "Name"
+   },
+   "filterSize": {
+      "message": "dimensione"
+   },
+   "genericError": {
+      "message": "Errore"
+   },
+   "genericOff": {
+      "message": "off"
+   },
+   "genericOn": {
+      "message": "on"
+   },
+   "genericUseGlobal": {
+      "message": "usa impostazione globale"
+   },
+   "headerRecycleBin": {
+      "message": "Cestino"
+   },
+   "hintInputURL": {
+      "message": "URL in input:"
+   },
+   "hintRecycleBin": {
+      "message": "Gli script rimossi sono elencati qui e verranno conservati per 7 giorni."
+   },
+   "hintUseDownloadURL": {
+      "message": "Utilizza @downloadURL"
+   },
+   "hintVacuum": {
+      "message": "Scarta le ridondanze e prova a ricaricare le risorse non presenti in cache."
+   },
+   "installFrom": {
+      "message": "Installa da $1"
+   },
+   "installOptionClose": {
+      "message": "Chiudo dopo l'installazione"
+   },
+   "installOptionTrack": {
+      "message": "Traccia il file locale prima che questa finestra venga chiusa"
+   },
+   "installOptionTrackTooltip": {
+      "message": "La scheda del file sorgente deve essere mantenuta aperta in Firefox 68 e versioni successive."
+   },
+   "labelAdvanced": {
+      "message": "Impostazioni avanzate"
+   },
+   "labelAllowUpdate": {
+      "message": "Consenti aggiornamenti"
+   },
+   "labelAuthor": {
+      "message": "Autore: "
+   },
+   "labelAutoReloadCurrentTab": {
+      "message": "Ricarica la scheda corrente dopo aver attivato o disattivato uno script dal menu"
+   },
+   "labelAutoReloadCurrentTabDisabled": {
+      "message": "Gli script correnti continueranno a funzionare fino a quando non ricaricherai la scheda"
+   },
+   "labelAutoUpdate": {
+      "message": "Controlla gli aggiornamenti degli script ogni $1 giorno/i, usa 0 per disabilitare quest'opzione"
+   },
+   "labelBackup": {
+      "message": "Backup"
+   },
+   "labelBadge": {
+      "message": "Mostra sull'icona:"
+   },
+   "labelBadgeColors": {
+      "message": "Colori icona:"
+   },
+   "labelBadgeNone": {
+      "message": "nessuno"
+   },
+   "labelBadgeTotal": {
+      "message": "numero totale di script in esecuzione"
+   },
+   "labelBadgeUnique": {
+      "message": "numero di script unici in esecuzione"
+   },
+   "labelBlacklist": {
+      "message": "Blacklist"
+   },
+   "labelContributors": {
+      "message": "Contributori"
+   },
+   "labelCurrentLang": {
+      "message": "Linguaggio corrente: "
+   },
+   "labelCustomCSS": {
+      "message": "Stile personalizzato"
+   },
+   "labelDownloadURL": {
+      "message": "URL di download:"
+   },
+   "labelEditValue": {
+      "message": "Modifica valore per lo scipt"
+   },
+   "labelEditValueAll": {
+      "message": "Modifica archivio script"
+   },
+   "labelEditor": {
+      "message": "Editor"
+   },
+   "labelEnabledScriptsOnly": {
+      "message": "enabled scripts only"
+   },
+   "labelExclude": {
+      "message": "Regole @exclude"
+   },
+   "labelExcludeMatch": {
+      "message": "Regole @exclude-match"
+   },
+   "labelExportScriptData": {
+      "message": "Esporta i dati degli script"
+   },
+   "labelExposeStatus": {
+      "message": "Esporre la versione installata sui siti catalogo di userscript: $1"
+   },
+   "labelFastFirefoxInject": {
+      "message": "Alternative $1 mode in Firefox"
+   },
+   "labelFastFirefoxInjectHint": {
+      "message": "An alternative injection method for \u003Cdocument-start> scripts since Firefox 59, faster than the default mode. Similarly to \"Synchronous page mode\" it also increases memory consumption, so you may want to disable it if your scripts work correctly without this option."
+   },
+   "labelFeedback": {
+      "message": "Feedback"
+   },
+   "labelFilterSort": {
+      "message": "Ordina per $1"
+   },
+   "labelGeneral": {
+      "message": "Generale"
+   },
+   "labelHelpTranslate": {
+      "message": "Aiuta con la traduzione"
+   },
+   "labelHomepage": {
+      "message": "Homepage"
+   },
+   "labelHomepageURL": {
+      "message": "URL Homepage:"
+   },
+   "labelImportScriptData": {
+      "message": "Importa i dati dello script"
+   },
+   "labelImportSettings": {
+      "message": "Importa impostazioni"
+   },
+   "labelInclude": {
+      "message": "@include rules"
+   },
+   "labelInjectionMode": {
+      "message": "Default injection mode: "
+   },
+   "labelInstall": {
+      "message": "Installando script"
+   },
+   "labelKeepOriginal": {
+      "message": "Mantieni originale"
+   },
+   "labelLastUpdatedAt": {
+      "message": "Ultimo aggiornamento: $1"
+   },
+   "labelLineNumber": {
+      "message": "Linea numero: "
+   },
+   "labelMatch": {
+      "message": "@match rules"
+   },
+   "labelName": {
+      "message": "Nome:"
+   },
+   "labelNoFrames": {
+      "message": "Esegui in frame:"
+   },
+   "labelNoName": {
+      "message": "Senza Nome"
+   },
+   "labelNoSearchScripts": {
+      "message": "Nessuno script trovato."
+   },
+   "labelNotifyThisUpdated": {
+      "message": ", then notify:"
+   },
+   "labelNotifyUpdates": {
+      "message": "Notifica aggiornamenti script"
+   },
+   "labelNotifyUpdatesGlobal": {
+      "message": "ignore per-script notification (\"settings\" tab in editor)"
+   },
+   "labelPopupSort": {
+      "message": "Sort scripts in popup by $1"
+   },
+   "labelPrivacyPolicy": {
+      "message": "Politica Sulla Riservatezza"
+   },
+   "labelReinstall": {
+      "message": "Reinstallazione dello script"
+   },
+   "labelRelated": {
+      "message": "Link correlati: "
+   },
+   "labelRemovedAt": {
+      "message": "Removed at $1"
+   },
+   "labelReplace": {
+      "message": "Sostituisci con: "
+   },
+   "labelRunAt": {
+      "message": "Esegui-In: "
+   },
+   "labelRunAtDefault": {
+      "message": "(Default)"
+   },
+   "labelScriptTemplate": {
+      "message": "Custom Script Template"
+   },
+   "labelSearch": {
+      "message": "Cerca: "
+   },
+   "labelSearchScript": {
+      "message": "Cerca script..."
+   },
+   "labelSettings": {
+      "message": "Impostazioni"
+   },
+   "labelShowOrder": {
+      "message": "Mostra le posizioni degli ordini di esecuzione"
+   },
+   "labelSync": {
+      "message": "Sincronizzazione"
+   },
+   "labelSyncAnonymous": {
+      "message": "Use anonymous account"
+   },
+   "labelSyncAuthorize": {
+      "message": "Autorizza"
+   },
+   "labelSyncAuthorizing": {
+      "message": "Autorizzando"
+   },
+   "labelSyncDisabled": {
+      "message": "Nessuno"
+   },
+   "labelSyncPassword": {
+      "message": "Password: "
+   },
+   "labelSyncRevoke": {
+      "message": "Revoca"
+   },
+   "labelSyncScriptStatus": {
+      "message": "Sincronizza lo stato degli script"
+   },
+   "labelSyncServerUrl": {
+      "message": "Server URL: "
+   },
+   "labelSyncService": {
+      "message": "Sincronizza con"
+   },
+   "labelSyncUsername": {
+      "message": "Username: "
+   },
+   "labelTheme": {
+      "message": "Tema:"
+   },
+   "labelUpdateURL": {
+      "message": "URL Aggiornamento:"
+   },
+   "labelViewSingleColumn": {
+      "message": "Colonna singola"
+   },
+   "labelViewTable": {
+      "message": "Guarda come tabella"
+   },
+   "labelXhrInject": {
+      "message": "Modalità $1 sincrona"
+   },
+   "labelXhrInjectHint": {
+      "message": "Abilita solo se hai uno script che deve essere eseguito prima che la pagina inizi a caricarsi e attualmente viene eseguito troppo tardi. Proprio come la modalità di iniezione istantanea in Tampermonkey, questa opzione sta usando il deprecato XHR sincrono, quindi in Chrome/Chromium vedrete degli avvisi nella console di devtools, anche se potete tranquillamente ignorarli poiché gli effetti negativi sono trascurabili in questo caso. Puoi nascondere definitivamente gli avvisi cliccando con il tasto destro del mouse su uno di essi."
+   },
+   "lastSync": {
+      "message": "Ultima sincronizzazione il $1"
+   },
+   "learnBlacklist": {
+      "message": "Impara di più sui pattern blacklist."
+   },
+   "learnInjectionMode": {
+      "message": "Learn more about injection modes."
+   },
+   "menuDashboard": {
+      "message": "Apri Dashboard"
+   },
+   "menuExclude": {
+      "message": "Escludi..."
+   },
+   "menuExcludeHint": {
+      "message": "La scheda corrente verrà ricaricata automaticamente se hai abilitato questa opzione nelle impostazioni generali.\nPer applicare le modifiche a tutte le altre schede, ricaricarle manualmente.\nUsa la scheda \"Impostazioni\" dell'editor per una maggiore flessibilità."
+   },
+   "menuFeedback": {
+      "message": "Feedback"
+   },
+   "menuFindScripts": {
+      "message": "Cerca script per questo sito"
+   },
+   "menuInjectionFailed": {
+      "message": "Impossibile iniettare alcuni script."
+   },
+   "menuInjectionFailedFix": {
+      "message": "Riprovare in modalità \"auto\""
+   },
+   "menuMatchedDisabledScripts": {
+      "message": "Script disabilitati abbinati"
+   },
+   "menuMatchedFrameScripts": {
+      "message": "Sub-frames only scripts"
+   },
+   "menuMatchedScripts": {
+      "message": "Script corrispondenti"
+   },
+   "menuNewScript": {
+      "message": "Create a new script"
+   },
+   "menuScriptDisabled": {
+      "message": "Script disabilitati"
+   },
+   "menuScriptEnabled": {
+      "message": "Script abilitati"
+   },
+   "msgCheckingForUpdate": {
+      "message": "Controllo degli aggiornamenti..."
+   },
+   "msgDateFormatInfo": {
+      "message": "Fare clic per aprire la documentazione di MomentJS. Token consentiti: $1. Usa [parentesi quadre] per proteggere il testo letterale."
+   },
+   "msgErrorFetchingResource": {
+      "message": "Errore durante il recupero della risorsa!"
+   },
+   "msgErrorFetchingScript": {
+      "message": "Errore durante lo scaricamento dello script!"
+   },
+   "msgErrorFetchingUpdateInfo": {
+      "message": "Problemi nello scaricamento delle informazioni sull'aggiornamento."
+   },
+   "msgErrorLoadingData": {
+      "message": "Errore caricamento dati script."
+   },
+   "msgErrorLoadingDependency": {
+      "message": "Errore caricamento dipendenze."
+   },
+   "msgImported": {
+      "message": "$1 elemento/i importati."
+   },
+   "msgIncognitoChanges": {
+      "message": "Le modifiche apportate in modalità di navigazione in incognito si applicano anche al tuo profilo principale."
+   },
+   "msgInstalled": {
+      "message": "Script installato."
+   },
+   "msgInvalidScript": {
+      "message": "Script non valido!"
+   },
+   "msgLoadingData": {
+      "message": "Caricamento dati script..."
+   },
+   "msgLoadingDependency": {
+      "message": "Caricamento dipendenze... ($1/$2)"
+   },
+   "msgMissingResources": {
+      "message": "Le risorse necessarie sono assenti."
+   },
+   "msgNamespaceConflict": {
+      "message": "Uno script come questo è già installato o è ancora nel Cestino.\nPer favore usa un @name e @namespace diverso qui o modifica invece quello script."
+   },
+   "msgNamespaceConflictRestore": {
+      "message": "A script with the same @name and @namespace is already installed."
+   },
+   "msgNewVersion": {
+      "message": "Nuova versione trovata."
+   },
+   "msgNoUpdate": {
+      "message": "Aggiornamento non trovato."
+   },
+   "msgOpenUpdateErrors": {
+      "message": "Error updating scripts. Click to open them."
+   },
+   "msgReinstallScripts": {
+      "message": "Per favore salva o installa nuovamente questi script:"
+   },
+   "msgSameCode": {
+      "message": "(il codice è lo stesso)"
+   },
+   "msgSavedBlacklist": {
+      "message": "Blacklist aggiornata."
+   },
+   "msgSavedCustomCSS": {
+      "message": "Stile personalizzato aggiornato."
+   },
+   "msgSavedEditorOptions": {
+      "message": "Editor options are updated."
+   },
+   "msgSavedScriptTemplate": {
+      "message": "Custom script template is updated."
+   },
+   "msgScriptUpdated": {
+      "message": "Lo script [$1] è aggiornato!"
+   },
+   "msgShowHide": {
+      "message": "Mostra/nascondi"
+   },
+   "msgSyncError": {
+      "message": "Errore sincronizzazione!"
+   },
+   "msgSyncInit": {
+      "message": "Inizializzando..."
+   },
+   "msgSyncInitError": {
+      "message": "Errore inizializzazione!"
+   },
+   "msgSyncNoAuthYet": {
+      "message": "Non ancora autorizzato."
+   },
+   "msgSyncReady": {
+      "message": "La sincronizzazione partirà presto..."
+   },
+   "msgSyncing": {
+      "message": "Sincronizzazione in progresso..."
+   },
+   "msgSyntaxError": {
+      "message": "Syntax error?"
+   },
+   "msgUpdated": {
+      "message": "Script aggiornato."
+   },
+   "msgUpdating": {
+      "message": "Aggiornamento in corso..."
+   },
+   "noValues": {
+      "message": "Nessun valore salvato"
+   },
+   "optionEditorWindow": {
+      "message": "Apri editor da popup ad una nuova finestra"
+   },
+   "optionEditorWindowHint": {
+      "message": "La posizione della finestra dell'editor sarà memorizzata solo su ridimensionamento o salvataggio"
+   },
+   "optionEditorWindowSimple": {
+      "message": "Nascondi omnibox"
+   },
+   "optionPopup": {
+      "message": "Menu popup e icona"
+   },
+   "optionPopupEnabledFirst": {
+      "message": "Enabled first"
+   },
+   "optionPopupGroupDisabled": {
+      "message": "Gruppo script disabilitati"
+   },
+   "optionPopupGroupRunAt": {
+      "message": "Group by @run-at stage"
+   },
+   "optionPopupHideDisabled": {
+      "message": "Nascondi script disabilitati"
+   },
+   "optionPopupShowDisabled": {
+      "message": "Mostra script disabilitati"
+   },
+   "optionShowEnabledFirst": {
+      "message": "Visualizza script abilitati per primi"
+   },
+   "optionUiTheme": {
+      "message": "Tema UI:"
+   },
+   "optionUiThemeAuto": {
+      "message": "automatico"
+   },
+   "optionUiThemeDark": {
+      "message": "scuro"
+   },
+   "optionUiThemeLight": {
+      "message": "chiaro"
+   },
+   "optionUpdate": {
+      "message": "Aggiornamento"
+   },
+   "searchCaseSensitive": {
+      "message": "Maiuscole/minuscole"
+   },
+   "searchUseRegex": {
+      "message": "Espressione regolare"
+   },
+   "sideMenuAbout": {
+      "message": "A riguardo"
+   },
+   "sideMenuInstalled": {
+      "message": "Script installati"
+   },
+   "sideMenuSettings": {
+      "message": "Impostazioni"
+   },
+   "titleBadgeColor": {
+      "message": "Colore badge normale"
+   },
+   "titleBadgeColorBlocked": {
+      "message": "Colore del badge quando il sito non è iniettabile (nella lista nera o non supportato)"
+   },
+   "titleSearchHint": {
+      "message": "* \u003CEnter> key adds the text to autocomplete history\n* RegExp syntax is supported: /re/ and /re/flags"
+   },
+   "valueLabelKey": {
+      "message": "Chiave (stringa)"
+   },
+   "valueLabelValue": {
+      "message": "Valore (stringa JSON)"
+   },
+   "valueLabelValueAll": {
+      "message": "Tutti i valori (serializzato come JSON)"
+   },
+   "visitWebsite": {
+      "message": "Visit Website"
+   }
+}
