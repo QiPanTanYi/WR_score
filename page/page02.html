@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>移动端部署-微软积分</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f7fd;
+      }
+
+      .container {
+        width: 800px;
+        height: 2150px;
+        margin: auto;
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      header {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        color: #3478ff;
+      }
+
+      .content {
+        padding: 20px;
+        text-align: left;
+      }
+
+      p {
+        font-weight: bold;
+        color: #555555;
+        text-indent: 2em; /* 使用em单位，每个字符宽度为1em */
+      }
+
+      img {
+        height: 450px;
+        margin-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      pre {
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+
+      code {
+        display: block;
+        white-space: pre;
+        overflow-x: auto;
+        padding: 0;
+        margin: 0;
+      }
+
+      .btn-copy {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 14px;
+        background-color: #3478ff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        position: absolute;
+        right: 26%;
+      }
+
+      .btn-copy:hover {
+        background-color: #2453cc;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>TanZ的薅羊毛攻略-微软积分<br />——移动端x浏览器安装/脚本运行</h1>
+      </header>
+      <div class="content">
+        <p>
+          关于移动端上获取搜索积分，👇这边是推荐使用x浏览器内置的油猴脚本来刷。
+        </p>
+        <p style="margin-left: 24%">
+          <a href="https://www.xbext.com/" target="_blank">x浏览器官网下载</a>
+        </p>
+
+        <p>
+          我想特别安利一下这款手机浏览器——x浏览器，这玩意只有1MB多一点，非常非常小，但却有十分强大的功能，
+          内置的嗅探功能甚至可以强行下载页面内的音频和视频。当然，如果是单纯运行这个刷分脚本的话，
+          只需要一个能运行油猴插件的浏览器即可，比如：eie浏览器/苹果自带的Safair等。
+        </p>
+        <br />
+        <button class="btn-copy">复制代码</button>
+        <pre><code class="copy-code">
+// ==UserScript==
+// @name        自动刷微软积分脚本
+// @namespace   Violentmonkey Scripts
+// @match       https://*.bing.com/*
+// @grant       none
+// @version     1.0
+// @author      TanZ
+// @description PC端及移动端浏览器刷微软积分脚本
+// ==/UserScript==
+
+const searchUrl = 'https://www.bing.com/search';
+const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+
+// 检查当前URL是bing.com还是cn.bing.com
+if (window.location.hostname.endsWith('.bing.com')) {
+       // 每2000毫秒(2秒)执行一次随机搜索
+       // 根据设备类型设置循环次数（PC浏览器36次，bing浏览器APP30次）
+    const loopCount = isDesktop ? 36 : 30; 
+    let count = localStorage.getItem('searchCount') || 0;    // 从存储器中获取计数器初始值
+    const intervalId = setInterval(() => {
+        if (count >= loopCount) {
+            clearInterval(intervalId);  // 停止循环
+            localStorage.removeItem('searchCount');  // 删除计数器的值
+            window.close(); // 关闭 Bing 页面
+            return;
+        }
+        // 生成随机字符填入搜索框
+        const search = generateRandomSearch();
+
+        // 在必应搜索栏中输入搜索查询
+        const searchBox = document.getElementById('sb_form_q');
+        searchBox.value = search;
+        searchBox.dispatchEvent(new Event('input'));
+        // 点击提交按钮
+        const searchForm = document.getElementById('sb_form');
+        searchForm.submit();
+        // 增加计数器并更新存储中的值
+        count++;
+        localStorage.setItem('searchCount', count);
+    }, 2000);
+}
+
+function generateRandomSearch() {
+    let search = '';
+    // 生成由4位数字和1个字母组成的随机字符串
+    for (let i = 0; i < 4; i++) {
+        search += Math.floor(Math.random() * 10);
+    }
+    search += String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+    return search;
+}
+
+</code></pre>
+        <br /><br />
+        <p>具体x浏览器部署步骤：</p>
+        <img src="../img/C-01.png" alt="具体流程" /><br />
+        <p>
+          部署完成后，可以打开积分商城或Bing搜索页面，看看脚本运行情况，链接传送门👇
+        </p>
+        <br />
+        <p>==========================================================</p>
+        <p style="margin-left: 40%">
+          <a href="https://rewards.bing.com/" target="_blank">微软积分商城</a>
+        </p>
+        <p style="margin-left: 40%">
+          <a href="https://cn.bing.com/" target="_blank">Bing搜索页面</a>
+        </p>
+        <p>==========================================================</p>
+        <br /><br />
+        <p>*&nbsp;移动端搜索获取积分，只有用户等级到达二级才能解锁的。</p>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var copyCodeBtns = document.querySelectorAll(".btn-copy");
+
+        copyCodeBtns.forEach(function (btn) {
+          var clipboard = new ClipboardJS(btn, {
+            target: function (trigger) {
+              return trigger.nextElementSibling.querySelector(".copy-code");
+            },
+          });
+
+          clipboard.on("success", function (e) {
+            e.clearSelection();
+            e.trigger.textContent = "已复制";
+            setTimeout(function () {
+              e.trigger.textContent = "复制代码";
+            }, 2000);
+          });
+
+          clipboard.on("error", function (e) {
+            console.error("复制失败:", e.action);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

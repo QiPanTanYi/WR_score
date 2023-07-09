@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PC端部署-微软积分</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f7fd;
+      }
+
+      .container {
+        width: 800px;
+        height: 2300px;
+        margin: auto;
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      header {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        color: #3478ff;
+      }
+
+      .content {
+        padding: 20px;
+        text-align: left;
+      }
+
+      p {
+        font-weight: bold;
+        color: #555555;
+        text-indent: 2em; /* 使用em单位，每个字符宽度为1em */
+      }
+
+      img {
+        height: 350px;
+        /* width: 100%; */
+        margin-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      pre {
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+
+      code {
+        display: block;
+        white-space: pre;
+        overflow-x: auto;
+        padding: 0;
+        margin: 0;
+      }
+
+      .btn-copy {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 14px;
+        background-color: #3478ff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        position: absolute;
+        right: 26%;
+      }
+
+      .btn-copy:hover {
+        background-color: #2453cc;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>TanZ的薅羊毛攻略-微软积分<br />——PC端浏览器暴力猴脚本运行</h1>
+      </header>
+      <div class="content">
+        <p>
+          <a
+            href="https://microsoftedge.microsoft.com/addons/search/%E6%9A%B4%E5%8A%9B%E7%8C%B4"
+            target="_blank"
+            >暴力猴拓展下载（首选）</a
+          >
+        </p>
+        <p>
+          暴力猴分享（其他下载）<a
+            href="https://www.aliyundrive.com/s/Bnty2bD1x6b"
+            target="_blank"
+            >阿里云盘分享</a
+          >，
+          <a
+            href="https://pan.baidu.com/s/13jzHohgASzV3JXR5jXeqCA?pwd=1111"
+            target="_blank"
+            >百度云盘分享</a
+          >，
+          <a href="https://github.com/QiPanTanYi/WR_score" target="_blank"
+            >GitHub仓库</a
+          >
+        </p>
+
+        <p>
+          有两种方式可以获取脚本运行载体（暴力猴），都在上面啦！👆👆👆
+          第一种是直接搜索下载，第二种则是将上面云盘分享中的“2.14.0_0”整个个文件夹直接拖进浏览器拓展中。首选第一种嗷~
+        </p>
+        <p>
+          我是用Edge浏览器跑的，如果安装成功，那么可以在<a
+            href="edge://extensions/"
+            target="_blank"
+            >Edge拓展</a
+          >中查看到暴力猴Logo。
+        </p>
+        <p>安装成功后，可以在浏览器右上角找到下图的暴力猴界面👇👇👇</p>
+        <img src="../img/B-01.png" alt="界面" />
+        <p>
+          可以点击加号➕，进入到脚本编辑页面，复制粘贴下面的JS脚本，然后 Ctrl+s
+          保存，打开
+          <a href="https://cn.bing.com/" target="_blank">Bing搜索页面</a
+          >，自动就会开始刷啦！
+        </p>
+        <button class="btn-copy">复制代码</button>
+        <pre><code class="copy-code">
+// ==UserScript==
+// @name        自动刷微软积分脚本
+// @namespace   Violentmonkey Scripts
+// @match       https://*.bing.com/*
+// @grant       none
+// @version     1.0
+// @author      TanZ
+// @description PC端及移动端浏览器刷微软积分脚本
+// ==/UserScript==
+
+const searchUrl = 'https://www.bing.com/search';
+const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+
+// 检查当前URL是bing.com还是cn.bing.com
+if (window.location.hostname.endsWith('.bing.com')) {
+       // 每2000毫秒(2秒)执行一次随机搜索
+       // 根据设备类型设置循环次数（PC浏览器36次，bing浏览器APP30次）
+    const loopCount = isDesktop ? 36 : 30; 
+    let count = localStorage.getItem('searchCount') || 0;    // 从存储器中获取计数器初始值
+    const intervalId = setInterval(() => {
+        if (count >= loopCount) {
+            clearInterval(intervalId);  // 停止循环
+            localStorage.removeItem('searchCount');  // 删除计数器的值
+            window.close(); // 关闭 Bing 页面
+            return;
+        }
+        // 生成随机字符填入搜索框
+        const search = generateRandomSearch();
+
+        // 在必应搜索栏中输入搜索查询
+        const searchBox = document.getElementById('sb_form_q');
+        searchBox.value = search;
+        searchBox.dispatchEvent(new Event('input'));
+        // 点击提交按钮
+        const searchForm = document.getElementById('sb_form');
+        searchForm.submit();
+        // 增加计数器并更新存储中的值
+        count++;
+        localStorage.setItem('searchCount', count);
+    }, 2000);
+}
+
+function generateRandomSearch() {
+    let search = '';
+    // 生成由4位数字和1个字母组成的随机字符串
+    for (let i = 0; i < 4; i++) {
+        search += Math.floor(Math.random() * 10);
+    }
+    search += String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+    return search;
+}
+
+</code></pre>
+        <img src="../img/B-02.png" alt="脚本页面" />
+        <p>
+          部署完成后，可以打开积分商城或Bing搜索页面，看看脚本运行情况，链接传送门👇
+        </p>
+        <p>==========================================================</p>
+        <p style="margin-left: 40%">
+          <a href="https://rewards.bing.com/" target="_blank">微软积分商城</a>
+        </p>
+        <p style="margin-left: 40%">
+          <a href="https://cn.bing.com/" target="_blank">Bing搜索页面</a>
+        </p>
+        <p>==========================================================</p>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var copyCodeBtns = document.querySelectorAll(".btn-copy");
+
+        copyCodeBtns.forEach(function (btn) {
+          var clipboard = new ClipboardJS(btn, {
+            target: function (trigger) {
+              return trigger.nextElementSibling.querySelector(".copy-code");
+            },
+          });
+
+          clipboard.on("success", function (e) {
+            e.clearSelection();
+            e.trigger.textContent = "已复制";
+            setTimeout(function () {
+              e.trigger.textContent = "复制代码";
+            }, 2000);
+          });
+
+          clipboard.on("error", function (e) {
+            console.error("复制失败:", e.action);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

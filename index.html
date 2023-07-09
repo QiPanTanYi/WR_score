@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TanZ的薅羊毛攻略-微软积分</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f7fd;
+      }
+
+      .container {
+        width: 800px;
+        height: 4100px;
+        margin: auto;
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      header {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        color: #3478ff;
+      }
+
+      .content {
+        padding: 20px;
+        text-align: left;
+      }
+
+      p {
+        font-weight: bold;
+        color: #555555;
+        text-indent: 2em; /* 使用em单位，每个字符宽度为1em */
+      }
+
+      a {
+        font-weight: bold;
+        color: #d92359;
+      }
+
+      img {
+        height: 350px;
+        /* width: 100%; */
+        margin-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      pre {
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+
+      code {
+        display: block;
+        white-space: pre;
+        overflow-x: auto;
+        padding: 0;
+        margin: 0;
+      }
+
+      .btn-copy {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 14px;
+        background-color: #3478ff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        position: absolute;
+        right: 26%;
+      }
+
+      .btn-copy:hover {
+        background-color: #2453cc;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>TanZ的薅羊毛攻略-微软积分</h1>
+      </header>
+      <div class="content">
+        <p>
+          这里主要介绍“微软积分-自动搜索脚本”的所有内容，针对二级用户的积分获取中，的“每日搜索获取积分”。
+        </p>
+        <p>==========================================================</p>
+        <p style="margin-left: 40%">
+          <a href="https://rewards.bing.com/" target="_blank">微软积分商城</a>
+        </p>
+        <p style="margin-left: 40%">
+          <a href="https://cn.bing.com/" target="_blank">Bing搜索页面</a>
+        </p>
+        <p>==========================================================</p>
+        <br />
+        <img src="./img/A-01.png" alt="首图" />
+        <p>
+          <a href="https://www.vvso.cn/xlbk/27545.html" target="_blank"
+            >微软账号注册图文</a
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="https://www.zhihu.com/question/427066230/answer/2011525318?utm_id=0"
+            target="_blank"
+            >忘记密码怎么办？（知乎）</a
+          >
+        </p>
+        <p>只需要每天挂挂脚本就可以啦，积少成多，拿下！</p>
+        <p>
+          微软积分商城：<a
+            href="https://rewards.bing.com/redeem/"
+            target="_blank"
+            >https://rewards.bing.com/redeem/</a
+          >
+        </p>
+        <p>先放脚本代码（JavaScript）：</p>
+
+        <!-- 代码块 -->
+        <button class="btn-copy">复制代码</button>
+        <pre><code class="copy-code">
+// ==UserScript==
+// @name        自动刷微软积分脚本
+// @namespace   Violentmonkey Scripts
+// @match       https://*.bing.com/*
+// @grant       none
+// @version     1.0
+// @author      TanZ
+// @description PC端及移动端浏览器刷微软积分脚本
+// ==/UserScript==
+
+const searchUrl = 'https://www.bing.com/search';
+const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+
+// 检查当前URL是bing.com还是cn.bing.com
+if (window.location.hostname.endsWith('.bing.com')) {
+       // 每2000毫秒(2秒)执行一次随机搜索
+       // 根据设备类型设置循环次数（PC浏览器36次，bing浏览器APP30次）
+    const loopCount = isDesktop ? 36 : 30; 
+    let count = localStorage.getItem('searchCount') || 0;    // 从存储器中获取计数器初始值
+    const intervalId = setInterval(() => {
+        if (count >= loopCount) {
+            clearInterval(intervalId);  // 停止循环
+            localStorage.removeItem('searchCount');  // 删除计数器的值
+            window.close(); // 关闭 Bing 页面
+            return;
+        }
+        // 生成随机字符填入搜索框
+        const search = generateRandomSearch();
+
+        // 在必应搜索栏中输入搜索查询
+        const searchBox = document.getElementById('sb_form_q');
+        searchBox.value = search;
+        searchBox.dispatchEvent(new Event('input'));
+        // 点击提交按钮
+        const searchForm = document.getElementById('sb_form');
+        searchForm.submit();
+        // 增加计数器并更新存储中的值
+        count++;
+        localStorage.setItem('searchCount', count);
+    }, 2000);
+}
+
+function generateRandomSearch() {
+    let search = '';
+    // 生成由4位数字和1个字母组成的随机字符串
+    for (let i = 0; i < 4; i++) {
+        search += Math.floor(Math.random() * 10);
+    }
+    search += String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+    return search;
+}
+
+</code></pre>
+        <br />
+        <p>========================部署文档============================</p>
+        <br />
+        <p>
+          OK，关于如何跑脚本这个问题，这边提供了电脑和手机上如何运行脚本的部署方案：
+          <a href="./page/page01.html" target="_blank">PC端浏览器部署</a>、<a
+            href="./page/page02.html"
+            target="_blank"
+            >移动端浏览器部署</a
+          >（点击红字观看部署文档）如果你是新用户，那么只需要先部署PC端即可，等升到二级
+          解锁移动端后，可以尝试部署一下移动端的啦。
+        </p>
+        <br />
+        <p>========================部署文档============================</p>
+        <br /><br /><br /><br />
+        <p>（下面的内容都是打字打上瘾的，可以忽略）</p>
+        <br /><br />
+        <p>
+          积分兑换的东西蛮有意思的，大部分都是9600分就能换，具体奖励如下图：
+        </p>
+        <img src="./img/A-03.jpg" alt="奖励" />
+        <p>
+          积分获取是有分级的，这个要怎么解释呢。可以看一下下面这张表格图，对刚上车的萌新不是很友好，
+          所以前期尽量手动去做一下每日任务吧，快点刷上二级，搜索获取的分值会可观很多。
+          新手一般只能获取到每日任务和PC端搜索的积分，大概九天就能升为二级。
+        </p>
+        <img src="./img/A-02.png" alt="一级" />
+        <p>
+          我是在这个活动推出不久后发现它的，从一级到二级刷了大概一个月。二级纯做搜索任务（跑脚本），
+          一天能拿到（90+12）+60［PC端和移动端］=162分。如果我想兑换9600积分的京东50卡，大概只需要2个月不断期跑跑脚本就行！
+        </p>
+        <br /><br />
+        <p>
+          GitHub仓库地址：<a
+            href="https://github.com/QiPanTanYi/WR_score"
+            target="_blank"
+            >https://github.com/QiPanTanYi/WR_score</a
+          ><br />（有任何问题都可以在 Issue 中留言）
+        </p>
+        <img src="./img/A-04.jpg" alt="github" />
+        <br /><br /><br /><br />
+        <p>
+          *&nbsp;不得不说，微软是真大气！后期会想办法整个更方便的方案，在学青龙面板、Node.js和Electron.js啦！
+        </p>
+        <img src="./img/A-05.jpg" alt="jd" />
+        <!-- <img src="image.png" alt="图片2" />
+        <p>这是另一张图片的描述。</p> -->
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var copyCodeBtns = document.querySelectorAll(".btn-copy");
+
+        copyCodeBtns.forEach(function (btn) {
+          var clipboard = new ClipboardJS(btn, {
+            target: function (trigger) {
+              return trigger.nextElementSibling.querySelector(".copy-code");
+            },
+          });
+
+          clipboard.on("success", function (e) {
+            e.clearSelection();
+            e.trigger.textContent = "已复制";
+            setTimeout(function () {
+              e.trigger.textContent = "复制代码";
+            }, 2000);
+          });
+
+          clipboard.on("error", function (e) {
+            console.error("复制失败:", e.action);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
