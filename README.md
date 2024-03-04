@@ -1,4 +1,4 @@
-# WR_score-脚本使用说明书
+# WR_score-脚本使用说明书(该项目已废除)
 ​        此脚本主要是用来刷微软的搜索积分，采用了ES6语法，可以支持移动端及PC端浏览器的微软搜索类积分获取，早日兑换奖品！
 
 主文档：[TanZ的薅羊毛攻略-微软积分 (qipantanyi.github.io)](https://qipantanyi.github.io/WR_score/)
